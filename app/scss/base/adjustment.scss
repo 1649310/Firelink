@@ -1,0 +1,57 @@
+// variables
+$container-width: 985px;
+$main-color: #fff; 
+$text-color: #444444;
+
+//adjustment styles
+body, html {
+	max-width: 100vw;
+	width: 100%;
+	height: 100%;
+}
+body {
+	line-height: 1.42;
+	-webkit-font-smoothing: antialiased;
+	background-color: $main-color;
+}
+html {
+	font-size: 16px;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+
+}
+.container {
+	max-width: $container-width; 
+	margin: 0 auto;
+}
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	
+}
+button, input {
+	border: none;
+}
+.grid {
+	display: grid;	
+	grid-template-columns: 3fr 1fr;
+    grid-column-gap: 80px;
+}
+
+
+
+

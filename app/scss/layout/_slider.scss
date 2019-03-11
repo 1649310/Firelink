@@ -1,0 +1,73 @@
+.slider {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.slick-next, .slick-prev {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    top: 50%;
+    margin-top: -20px;
+}
+.slick-prev {
+    z-index: 1;
+    background: rgba(#fff, 0.7) url(../img/arrow_left.png) no-repeat ;
+    background-position: 50%;
+    &:hover {
+        background: rgba(#fff, 0.5) url(../img/arrow_left.png) no-repeat ;
+        background-position: 50%; 
+        transition: .3s;
+    }
+}
+.slick-next {
+    right: 0;
+    background: rgba(#fff, 0.7) url(../img/arrow_right.png) no-repeat ;
+    background-position: 50%;  
+    &:hover {
+        background: rgba(#fff, 0.5) url(../img/arrow_right.png) no-repeat ;
+        background-position: 50%; 
+        transition: .3s;
+    }
+}
+.slick-dots {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+}
+.slick-dots 
+    li {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: rgba(#fff, 0.7);
+        border-radius: 50%;
+        margin-left: 6px;
+        &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background: rgba(#000, 0.6);
+            border-radius: 50%;
+            display: inline-block;
+            margin-left: 5px;
+            margin-bottom: 2px;
+        }
+    }
+
+.slick-dots 
+	button {
+		font-size: 0;
+		border: none;
+    	background: transparent;
+}
+
+.slick-dots 
+	li.slick-active	{
+    background: rgba(#000, 0.6);
+    &::before {
+        background: rgba(#fff, 0.7); 
+    }
+}

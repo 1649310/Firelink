@@ -1,0 +1,41 @@
+.about {
+    margin-bottom: 70px;
+}
+.about__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about__item {
+    width: 100%;
+    margin-right: 25px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.about__link {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e6e9ed;
+    padding: 15px;
+    &:hover {
+        border: 1px solid #ccc;
+        transition: .3s;
+    }
+}
+.about__img {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    margin-right: 18px;
+}
+.about__title {
+    font: 400 24px 'Bitter';
+    color: $text-color;
+}
+.about__text {
+    font-size: 20px;
+    color: #808080;
+    font-family: Segoe UI, Helvetica, Arial,sans-serif;
+    font-weight: 100;
+}

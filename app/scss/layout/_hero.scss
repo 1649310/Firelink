@@ -1,0 +1,41 @@
+.hero {
+    position: relative;
+    display: flex;
+    background: #ccc url(../img/hero-bg.jpg) no-repeat;
+    height: 480px;
+}
+.hero__img, .hero__about {
+    width: 50%;
+}
+.hero__img {
+    margin-left: 45px;
+    margin-top: 65px;
+}
+.hero__title {
+    margin-top: 60px;
+    margin-bottom: 18px;
+}
+.title {
+    font: 400 36px 'Bitter';
+    color: #222;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: rgba(#fff, 0.7);
+}
+.hero__desc {
+    width: 70%;
+    color: #222;
+    font: 400 16px 'Bitter';
+    span {
+        text-transform: capitalize;
+    }
+    p {
+        margin-bottom: 2px;
+    }
+}
+.hero__desc-text {
+    background-color: rgba(#fff, 0.7);
+    display: inline-block;
+    padding: 7px 12px 9px;
+}
